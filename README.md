@@ -28,7 +28,7 @@ margin and rising efficiency — exactly the regime where naive predictors get p
 
 See the included notebook for the reproducible problem definition benchmark and result discussion:
 
-[`test_p34_09_slower_market_waves_.ipynb`](./test_p34_09_slower_market_waves_.ipynb)
+[`test_p34_09_slower_market_waves_demo.ipynb`](./test_p34_09_slower_market_waves_demo.ipynb)
 
 The notebook walks through the biased-data problem, the synthetic slower-market-waves setup, the GBDT baseline failure mode, and the P34 portfolio-level test results.
 
