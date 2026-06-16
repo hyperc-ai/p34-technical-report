@@ -1,0 +1,187 @@
+{
+  "scenario_name": "09_baseline_slower_market_waves",
+  "scenario_description": "Baseline market with slower market-goodness waves: about one observed and latent market cycle over the full 100-date horizon.",
+  "scenario_config_overrides": {
+    "market_observed_period": 100.0,
+    "market_latent_period": 100.0
+  },
+  "random_state": 42,
+  "config": {
+    "max_ticks": 100,
+    "future_eval_fraction": 0.2,
+    "cluster_count": 30,
+    "cluster_sv_range": [
+      0.01,
+      3.0
+    ],
+    "cluster_sigma_range": [
+      0.1,
+      3.0
+    ],
+    "lcogs_seeds": 5,
+    "qty_ordered_range": 40,
+    "weekly_demand_n_weeks": 8,
+    "market_observed_period": 100.0,
+    "market_observed_phase": 0.1,
+    "volume_period": 25.0,
+    "volume_phase": 4.4,
+    "market_latent_period": 100.0,
+    "market_latent_phase": 0.9,
+    "policy_period": 31.0,
+    "policy_phase": 3.0,
+    "policy_latent_period": 23.0,
+    "policy_latent_phase": 1.3,
+    "policy_sv_latent_period": 29.0,
+    "policy_sv_latent_phase": 2.1,
+    "lcogs_floor_base": 18.0,
+    "lcogs_floor_amplitude": 8.5,
+    "base_price": 34.0,
+    "lcogs_draw_min": 2.0,
+    "lcogs_draw_max": 38.0,
+    "lcogs_draw_skew": 1,
+    "base_orders_per_tick": 6.666666666666667,
+    "volume_amplitude": 0.65,
+    "holding_cost_per_unit": 0.5,
+    "leftover_writeoff_fraction": 1,
+    "latent_offer_edge_noise_scale": 0.18,
+    "latent_offer_fragility_noise_scale": 0.1,
+    "downside_regime_base_prob": 0.01,
+    "downside_regime_max_prob": 0.28,
+    "downside_regime_best_demand_mult": 0.9,
+    "downside_regime_worst_demand_mult": 0.1,
+    "downside_regime_base_extra_cost_frac": 0.0,
+    "downside_regime_max_extra_cost_frac": 0.55,
+    "market_latent_amplitude": 0.16,
+    "market_latent_noise_amplitude": 0.1,
+    "market_profit_trend_strength": 1.75,
+    "market_trend_segments": null,
+    "policy_threshold_base": 1.9,
+    "market_policy_coupling": 0.0,
+    "policy_threshold_amplitude": 0.3,
+    "policy_threshold_noise_amplitude": 0.08,
+    "policy_latent_amplitude": 0.65,
+    "policy_latent_noise_amplitude": 0.1,
+    "policy_sv_latent_amplitude": 0.45,
+    "policy_sv_latent_noise_amplitude": 0.1,
+    "policy_margin_interaction": 0.0,
+    "policy_sv_interaction": 0.0,
+    "target_acceptance_rate_min": 0.02,
+    "target_acceptance_rate_max": 0.1,
+    "target_acceptance_rate_scale": 1.35,
+    "target_acceptance_rate_market_coupling": 0.9,
+    "policy_score_noise_scale": 0.75,
+    "policy_exploration_accept_rate": 0.01,
+    "business_qty_mode": "sv_coverage",
+    "business_qty_coverage_low_sv": 2.0,
+    "business_qty_coverage_mid_sv": 1.6,
+    "business_qty_coverage_high_sv": 1.25,
+    "business_qty_lognormal_sigma": 0.0,
+    "business_qty_beta_alpha": 4.5,
+    "business_qty_beta_beta": 2.5,
+    "business_qty_horizon_weeks": 2.0,
+    "business_qty_rel_sigma_low_sv": 0.6,
+    "business_qty_rel_sigma_mid_sv": 0.35,
+    "business_qty_rel_sigma_high_sv": 0.2,
+    "business_qty_inventory_risk_aversion": 1.0,
+    "business_operational_cost_per_unit": 2.5,
+    "accepted_safe_unsafe_labels_from_business_qty": false,
+    "low_sv_threshold": 0.5,
+    "mid_sv_threshold": 3.0,
+    "rel_sigma_min_cap": 0.05,
+    "rel_sigma_low_cap": 1.0,
+    "rel_sigma_mid_cap": 0.55,
+    "rel_sigma_high_cap": 0.25,
+    "weekly_demand_low_rho": 0.35,
+    "weekly_demand_mid_rho": 0.6,
+    "weekly_demand_high_rho": 0.82,
+    "weekly_demand_low_latent_rel_sigma": 0.3,
+    "weekly_demand_mid_latent_rel_sigma": 0.18,
+    "weekly_demand_high_latent_rel_sigma": 0.08,
+    "disable_cluster_drop_for_testing": true
+  },
+  "historical_dates": 80,
+  "future_eval_dates": 20,
+  "historical_avg_keys_per_date": 969.375,
+  "saved_shapes": {
+    "X_labeled": [
+      521313,
+      6
+    ],
+    "y_labeled": [
+      521313,
+      1
+    ],
+    "x_labeled_dates": [
+      521313,
+      1
+    ],
+    "x_labeled_keys": [
+      521313,
+      1
+    ],
+    "X_unlabeled": [
+      2503137,
+      6
+    ],
+    "y_unlabeled": [
+      2503137,
+      1
+    ],
+    "x_unlabeled_dates": [
+      2503137,
+      1
+    ],
+    "x_unlabeled_keys": [
+      2503137,
+      1
+    ],
+    "labeled_meta": [
+      521313,
+      7
+    ],
+    "unlabeled_meta": [
+      2503137,
+      8
+    ],
+    "eval/X_labeled": [
+      190359,
+      6
+    ],
+    "eval/y_labeled": [
+      190359,
+      1
+    ],
+    "eval/x_labeled_dates": [
+      190359,
+      1
+    ],
+    "eval/x_labeled_keys": [
+      190359,
+      1
+    ],
+    "eval/labeled_meta": [
+      190359,
+      7
+    ],
+    "eval/X_unlabeled": [
+      716391,
+      6
+    ],
+    "eval/y_unlabeled": [
+      716391,
+      1
+    ],
+    "eval/x_unlabeled_dates": [
+      716391,
+      1
+    ],
+    "eval/x_unlabeled_keys": [
+      716391,
+      1
+    ],
+    "eval/unlabeled_meta": [
+      716391,
+      8
+    ]
+  }
+}
